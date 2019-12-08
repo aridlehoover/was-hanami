@@ -1,0 +1,16 @@
+<h2>Alerts</h2>
+
+<% if alerts.any? %>
+  <table id="alerts">
+    <th>
+      <td>Title</td>
+    </th>
+    <% alerts.each do |alert| %>
+      <tr class="alert">
+        <td><%= alert.title %></td>
+      </tr>
+    <% end %>
+  </div>
+<% else %>
+  <p>There are no alerts yet.</p>
+<% end %>

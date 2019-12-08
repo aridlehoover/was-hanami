@@ -15,7 +15,7 @@ As an administrator,
 In order to maintain the alerts in the system,
 I want to...
 
-* See a list of all alerts
+* ✅ See a list of all alerts
 * Add an alert
 * See an alert
 * Update an alert
