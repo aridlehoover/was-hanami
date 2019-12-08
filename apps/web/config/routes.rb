@@ -1,2 +1,3 @@
 root to: 'home#index'
-get '/alerts', to: 'alerts#index'
+
+resources :alerts, only: [:index, :new, :create]

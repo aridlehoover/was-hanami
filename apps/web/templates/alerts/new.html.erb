@@ -1,0 +1,44 @@
+<h2>Add alert</h2>
+
+<%=
+  form_for :alert, routes.alerts_path do
+    div class: 'input' do
+      label :uuid
+      text_field :uuid
+    end
+
+    div class: 'input' do
+      label :title
+      text_field :title
+    end
+
+    div class: 'input' do
+      label :location
+      text_field :location
+    end
+
+    div class: 'input' do
+      label :message
+      text_area :message
+    end
+
+    div class: 'input' do
+      label :publish_at
+      text_field :publish_at
+    end
+
+    div class: 'input' do
+      label :effective_at
+      text_field :effective_at
+    end
+
+    div class: 'input' do
+      label :expires_at
+      text_field :expires_at
+    end
+
+    div class: 'controls' do
+      submit 'Create'
+    end
+  end
+%>
