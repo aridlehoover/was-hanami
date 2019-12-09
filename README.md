@@ -17,7 +17,7 @@ I want to...
 
 * ✅ See a list of all alerts
 * ✅ Add an alert
-* See an alert
+* ✅ See an alert
 * Update an alert
 * Delete an alert
 

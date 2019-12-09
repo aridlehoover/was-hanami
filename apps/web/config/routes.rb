@@ -1,3 +1,3 @@
 root to: 'home#index'
 
-resources :alerts, only: [:index, :new, :create]
+resources :alerts, only: [:index, :show, :new, :create]
