@@ -25,7 +25,7 @@ As an administrator,
 In order to maintain the recipients in the system,
 I want to...
 
-* See a list of all recipients
+* ✅ See a list of all recipients
 * Add an recipient
 * See an recipient
 * Update an recipient

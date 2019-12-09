@@ -1,0 +1,24 @@
+<h2>Recipients</h2>
+
+<%= link_to 'Home', routes.root_path %>
+<br><br>
+
+<% if recipients.any? %>
+  <table id="recipients">
+    <tr>
+      <th>Channel</th>
+      <th>Address</th>
+    </tr>
+    <% recipients.each do |recipient| %>
+      <tr class="recipient">
+        <td><%= recipient.channel %></td>
+        <td><%= recipient.address %></td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <p>There are no recipients yet.</p>
+<% end %>
+
+<br>
+<%= link_to 'Home', routes.root_path %>

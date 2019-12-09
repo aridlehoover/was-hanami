@@ -10,8 +10,8 @@ RSpec.describe Web::Views::Alerts::Index, type: :view do
   end
 
   context 'when there are alerts' do
-    let(:alert1) { Alert.new(title: 'Tornado warning') }
-    let(:alert2) { Alert.new(title: 'Volcano warning') }
+    let(:alert1) { Alert.new(id: 1, title: 'Tornado warning') }
+    let(:alert2) { Alert.new(id: 2, title: 'Volcano warning') }
     let(:alerts) { [alert1, alert2] }
 
     it 'lists them all' do

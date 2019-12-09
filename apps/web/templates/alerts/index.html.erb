@@ -1,16 +1,38 @@
 <h2>Alerts</h2>
 
+<%= link_to 'New Alert', routes.new_alert_path %> |
+<%= link_to 'Home', routes.root_path %>
+<br><br>
+
 <% if alerts.any? %>
   <table id="alerts">
-    <th>
-      <td>Title</td>
-    </th>
+    <tr>
+      <th>Uuid</th>
+      <th>Title</th>
+      <th>Location</th>
+      <th>Message</th>
+      <th>Publish at</th>
+      <th>Effective at</th>
+      <th>Expires at</th>
+      <th></th>
+    </tr>
     <% alerts.each do |alert| %>
       <tr class="alert">
+        <td><%= alert.uuid %></td>
         <td><%= alert.title %></td>
+        <td><%= alert.location %></td>
+        <td><%= alert.message %></td>
+        <td><%= alert.publish_at %></td>
+        <td><%= alert.effective_at %></td>
+        <td><%= alert.expires_at %></td>
+        <td><%= link_to 'Show', routes.alert_path(alert.id) %></td>
       </tr>
     <% end %>
-  </div>
+  </table>
 <% else %>
   <p>There are no alerts yet.</p>
 <% end %>
+
+<br>
+<%= link_to 'New Alert', routes.new_alert_path %> |
+<%= link_to 'Home', routes.root_path %>
