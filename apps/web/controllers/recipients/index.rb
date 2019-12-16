@@ -1,17 +1,13 @@
 module Web
   module Controllers
     module Recipients
-      class Index
+      class Index < BaseController
         include Web::Action
-
-        def initialize(repository = RecipientRepository.new)
-          @repository = repository
-        end
 
         expose :recipients
 
         def call(params)
-          @recipients = @repository.all
+          @recipients = repository.all
         end
       end
     end
